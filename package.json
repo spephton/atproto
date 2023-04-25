@@ -1,0 +1,19 @@
+{
+  "name": "spep_atproto",
+  "version": "1.0.0",
+  "description": "playing with at protocol / bluesky api",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node-esm index.ts"
+  },
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "dependencies": {
+    "@atproto/api": "^0.2.9",
+    "@types/node": "^18.16.0",
+    "dotenv": "^16.0.3",
+    "typescript": "^5.0.4"
+  }
+}
