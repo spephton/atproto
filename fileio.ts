@@ -1,15 +1,15 @@
 import fs from 'node:fs/promises';
 import process from 'node:process';
+import { AtpSessionData } from '@atproto/api';
 
 
-const stfile = process.cwd() + '/.sessiontoken';
+const stfile = process.cwd() + '/.sessiondata.json';
 
 const stReadback = await fs.readFile(
     stfile, {encoding: 'utf-8'}
 );
 
-console.log(stReadback);
+// no guardrails
+const sessiondata: AtpSessionData = JSON.parse(stReadback);
 
-const sessionToken = "3bf8ea905examplesessiontoken5e";
-
-await fs.writeFile(stfile, sessionToken);
+console.log(sessiondata);

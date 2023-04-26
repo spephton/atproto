@@ -80,7 +80,7 @@ web_modules/
 .env.local
 
 # other secrets
-.sessiontoken
+.sessiondata.json
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
